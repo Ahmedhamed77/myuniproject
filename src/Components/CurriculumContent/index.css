@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+    --c-color: #5B6A9A;
+    --c-bgcolor: #EEF0F7;
+    --c-sec-color: #81899C;
+}
+
+.curriculum-content {
+    margin-bottom: 60px;
+}
+
+.curriculum-content h2 {
+    color: var(--c-color);
+    font-size: 48px;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-family: 'Lato', sans-serif;
+}
+
+.curriculum-content .cards {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.curriculum-content .my-card {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    flex: 1 1 100%;
+    gap: 30px;
+    background-color: var(--c-bgcolor);
+    border-radius: 12px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.curriculum-content .my-card:hover {
+    background-color: #fff;
+    transform: scale(1.02);
+    box-shadow: 0px 5px 50px -8px #ddd;
+}
+
+.my-card svg {
+    font-size: 95px;
+    color: var(--c-color);
+}
+
+.my-card .title {
+    display: flex;
+    align-items: center;
+}
+
+.my-card .badge {
+    font-weight: 400;
+    font-size: 12px;
+    background-color: var(--teal); /* BOOTSTRAP */
+    color: #fff;
+    margin-left: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.my-card .badge.special {
+    background-color: #f16c79;
+}
+
+.my-card h3{
+    font-size: 24px;
+    /* font-weight: 800; */
+    line-height: 1.22em;
+    width: fit-content;
+    margin-bottom: 5px;
+    color: var(--c-color);
+}
+
+.my-card ul {
+    color: var(--c-sec-color);
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.my-card ul > li {
+    display: inline;
+    line-height: 1.22em;
+}
+
+.my-card ul > li::after {
+    content: '-';
+    color: var(--c-color);
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.my-card ul > li:last-of-type::after {
+    content: '';
+}
