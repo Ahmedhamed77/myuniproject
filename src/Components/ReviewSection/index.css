@@ -1,0 +1,85 @@
+.container{
+    margin-top: 10%;
+}
+
+.single-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    background: #ffffff;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 30px 0 rgba(167, 167, 167, 0.16);
+}
+
+.single-box:hover{
+    border: 1px solid #FE7A7B;
+}
+
+.quote-icon{
+    padding: 10px;
+    margin: 10px;
+}
+
+.image-text{
+    padding: 10px;
+    margin: 10px;
+}
+
+.image-text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #6A6972;
+    margin: 0;
+}
+
+
+.image-area{
+    display: flex;
+}
+
+.image-area img{
+    max-width: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.student{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2E2E2E;
+}
+
+.country{
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 26px;
+    color: #6A6972;
+    margin: 0;
+}
+
+.carousel-indicators{
+    margin: 0;
+    cursor: pointer;
+}
+
+.carousel-indicators li{
+    width: 15px;
+    height: 11px;
+    border-radius: 50%;
+    background: linear-gradient(
+            180deg
+            , #fe8464 0%, #fe6e9a 100%);
+}

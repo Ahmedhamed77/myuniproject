@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.navbar-default{
+    background: #4d5363;
+    transition: all .7s ease-out .1s;
+    width: 100%;
+
+    z-index: 99;
+}
+
+.sticky{
+    background-color: #000000;
+    z-index: 99;
+    transition: all .3s ease-out 0s;
+}
+
+
+.links-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin-right: 45px;
+    -webkit-transition: all .5s ease-out 0s;
+    -moz-transition: all .5s ease-out 0s;
+    -ms-transition: all .5s ease-out 0s;
+    -o-transition: all .5s ease-out 0s;
+    transition: all .5s ease-out 0s;
+    padding: 15px 0;
+    position: relative;
+    font-family: poppins,sans-serif;
+}
