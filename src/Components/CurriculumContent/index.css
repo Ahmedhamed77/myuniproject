@@ -99,3 +99,44 @@
 .my-card ul > li:last-of-type::after {
     content: '';
 }
+
+.curriculum-content .timeline {
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #eef0f7;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 100px;
+}
+
+.curriculum-content .timeline .event::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: block;
+    top: -6px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--blue);
+}
+
+.curriculum-content .timeline .event .title {
+    font-size: 20px;
+    font-weight: 500;
+    top: -50px;
+    color: #04143A;
+    position: absolute;
+}
+
+.curriculum-content .timeline .event .name {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 20px 0 5px;
+    color: var(--c-color);
+}
+
+.curriculum-content .timeline .event .date {
+    font-size: 14px;
+    font-weight: 400;
+    color: #81899C;
+}
