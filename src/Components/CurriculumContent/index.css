@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
 
 :root {
     --c-color: #5B6A9A;
@@ -11,36 +11,38 @@
 }
 
 .curriculum-content h2 {
-    color: var(--c-color);
     font-size: 48px;
-    line-height: 1.5em;
     font-weight: 400;
+    line-height: 1.5em;
     margin-bottom: 30px;
+    color: var(--c-color);
     font-family: 'Lato', sans-serif;
 }
 
 .curriculum-content .cards {
-    display: grid;
     gap: 15px;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .curriculum-content .my-card {
+    gap: 30px;
+    width: 100%;
+    height: 200px;
     display: flex;
     padding: 20px;
-    align-items: center;
-    flex: 1 1 100%;
-    gap: 30px;
-    background-color: var(--c-bgcolor);
-    border-radius: 12px;
-    height: 200px;
     cursor: pointer;
     transition: 0.5s;
+    max-width: 536.5px;
+    align-items: center;
+    border-radius: 12px;
+    background-color: var(--c-bgcolor);
 }
 
 .curriculum-content .my-card:hover {
-    background-color: #fff;
     transform: scale(1.02);
+    background-color: #fff;
     box-shadow: 0px 5px 50px -8px #ddd;
 }
 
@@ -54,34 +56,32 @@
     align-items: center;
 }
 
+.my-card h3{
+    font-size: 24px;
+    margin-bottom: 5px;
+    line-height: 1.22em;
+    color: var(--c-color);
+}
+
 .my-card .badge {
-    font-weight: 400;
-    font-size: 12px;
-    background-color: var(--teal); /* BOOTSTRAP */
     color: #fff;
-    margin-left: 15px;
+    font-size: 12px;
+    font-weight: 400;
     padding: 5px;
+    margin-left: 15px;
     border-radius: 5px;
+    background-color: var(--teal); /* BOOTSTRAP */
 }
 
 .my-card .badge.special {
     background-color: #f16c79;
 }
 
-.my-card h3{
-    font-size: 24px;
-    /* font-weight: 800; */
-    line-height: 1.22em;
-    width: fit-content;
-    margin-bottom: 5px;
-    color: var(--c-color);
-}
-
 .my-card ul {
-    color: var(--c-sec-color);
     list-style: none;
     font-size: 16px;
     font-weight: 400;
+    color: var(--c-sec-color);
 }
 
 .my-card ul > li {
@@ -91,9 +91,9 @@
 
 .my-card ul > li::after {
     content: '-';
-    color: var(--c-color);
     font-size: 20px;
     margin: 0 10px;
+    color: var(--c-color);
 }
 
 .my-card ul > li:last-of-type::after {
