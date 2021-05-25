@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -6,8 +8,67 @@
 
 .ContainerReview{
     display: flex;
+    margin: 15px 0 25px;
+    box-shadow: 0 5px 18px 0 rgba(198, 198, 198, 0.75);
+    border-radius: 0;
+    transition: all 0.3s;
+
 }
 
 .imgContainer{
 
+}
+
+.student-img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.reviewsContainer{
+    padding: 15px 30px 15px 30px;
+    min-height: 200px;
+    height: auto;
+    width: calc(100% - 300px);
+}
+
+.name-text{
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-weight: 700;
+    margin: 0;
+}
+
+.student-year{
+    margin: 0 0 12px;
+    color: #888;
+}
+
+
+.review-text{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+   /* margin: 5px 0 5px 0;*/
+    font-size: 13px;
+}
+
+.country-text{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 700px){
+    .ContainerReview{
+        flex-direction: column;
+    }
+    .reviewsContainer{
+        width: 100%;
+    }
+    .student-review{
+        max-width: 80%;
+    }
+    .student-img{
+        width: 100%;
+    }
 }

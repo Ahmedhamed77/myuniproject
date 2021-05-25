@@ -2,8 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Navbar from "./Components/Navbar";
 import AboutContent from "./Components/AboutContent";
-import CurriculumContent from "./Components/CurriculumContent";
 import ReviewSection from "./Components/ReviewSectionContent";
+import CurriculumContent from "./Components/CurriculumContent";
 
 function App() {
     return (
@@ -11,7 +11,7 @@ function App() {
             <Navbar/>
             <AboutContent/>
             <CurriculumContent/>
-            {/* <ReviewSection/> */}
+            <ReviewSection/>
 
         </>
 
