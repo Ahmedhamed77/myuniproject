@@ -4,6 +4,8 @@ import LanguageIconTwoTone from '@material-ui/icons/LanguageTwoTone';
 import BusinessCenterIconTwoTone from '@material-ui/icons/BusinessCenterTwoTone';
 import BookTwoToneIcon from '@material-ui/icons/BookTwoTone';
 import PanToolTwoToneIcon from '@material-ui/icons/PanToolTwoTone';
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 
 const CurriculumContent = () => {
     const cards = [
@@ -19,6 +21,7 @@ const CurriculumContent = () => {
         <MyCard 
             title="International Relations and History"
             badge="Main"
+            delay="200"
             icon={<BookTwoToneIcon></BookTwoToneIcon>}
             listItems= {[
                 'World history and Russian history',
@@ -31,6 +34,7 @@ const CurriculumContent = () => {
         <MyCard 
             title="Economics business law"
             badge="Main"
+            delay="400"
             icon={<BusinessCenterIconTwoTone></BusinessCenterIconTwoTone>}
             listItems= {[
                 'Economics',
@@ -42,6 +46,7 @@ const CurriculumContent = () => {
         <MyCard 
             title="International cooperation with Russia"
             badge="Special"
+            delay="600"
             icon={<PanToolTwoToneIcon></PanToolTwoToneIcon>}
             listItems= {[
                 'Organization and support of business in Russia',
@@ -75,7 +80,6 @@ const CurriculumContent = () => {
     return (
         <div className="container">
             <div className="curriculum-content">
-                <h2>Ongoing Curriculum</h2>
                 <div className="cards">
                     {cards.map(card => card)}
                 </div>
@@ -88,9 +92,9 @@ const CurriculumContent = () => {
     );
 };
 
-const MyCard = ({title, badge, icon, listItems=[]}) => {
+const MyCard = ({title, badge, icon, delay, listItems=[]}) => {
     return (
-        <div className="my-card">
+        <ScrollAnimation animateIn="animate__fadeInDown" delay={delay} duration="0.7" animateOnce={true} className="my-card">
             {icon}
             <div>
                 <div className="title">
@@ -101,7 +105,7 @@ const MyCard = ({title, badge, icon, listItems=[]}) => {
                     {listItems.map(i => (<li>{i}</li>))}
                 </ul>
             </div>
-        </div>
+        </ScrollAnimation>
     );
 }
 

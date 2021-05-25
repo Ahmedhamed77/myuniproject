@@ -8,15 +8,7 @@
 
 .curriculum-content {
     margin-bottom: 60px;
-}
-
-.curriculum-content h2 {
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 1.5em;
-    margin-bottom: 30px;
-    color: var(--c-color);
-    font-family: 'Lato', sans-serif;
+    margin-top: 300px;
 }
 
 .curriculum-content .cards {
@@ -117,7 +109,7 @@
     top: -6px;
     position: absolute;
     border-radius: 50%;
-    background-color: var(--blue);
+    background-color: #6786ea;
 }
 
 .curriculum-content .timeline .event .title {
