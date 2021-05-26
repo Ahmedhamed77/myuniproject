@@ -87,6 +87,10 @@ footer .real-footer {
         padding: 20px 0;
     }
 
+    footer .description {
+        text-align: justify;
+    }
+
     footer .row-1 {
         gap: 30px;
         justify-content: center;
